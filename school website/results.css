@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef4fb,#ffffff);
+    padding:30px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+/* HEADER */
+.header{
+    background:#0a3d91;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* STUDENT INFO */
+.student-info{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.student-info div{
+    flex:1;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.student-info h4{
+    font-size:13px;
+    color:#555;
+}
+
+.student-info p{
+    font-weight:600;
+    margin-top:5px;
+}
+
+/* RESULT CARD */
+.result-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    padding:15px;
+    text-align:left;
+    border-bottom:1px solid #eee;
+}
+
+th{
+    background:#f4f6fb;
+}
+
+/* GRADES */
+.A{ color:#16a34a; font-weight:700; }
+.B{ color:#2563eb; font-weight:700; }
+.C{ color:#f59e0b; font-weight:700; }
+.D{ color:#dc2626; font-weight:700; }
+
+/* SUMMARY */
+.summary{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    gap:15px;
+}
+
+.box{
+    flex:1;
+    background:#f8fafc;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.box h3{
+    color:#555;
+    font-size:14px;
+}
+
+.box p{
+    font-size:18px;
+    font-weight:700;
+    color:#0a3d91;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .student-info,
+    .summary{
+        flex-direction:column;
+    }
+}
